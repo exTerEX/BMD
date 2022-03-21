@@ -14,7 +14,7 @@ higher as can be the case with NOAEL.
 
 ## Loading R packages
 
-For this guide, two packages are needed. `tidyverse` to import the data
+For this guide, two packages are needed. `readr` to import the data
 and visual representation, while `drc` is used to build a logistic model
 as the base for the BMD model.
 
@@ -60,7 +60,8 @@ plot(
     ylab = "Response",
     type = "confidence",
     log = "",
-    col = c(2, 6)
+    col = c(2, 6),
+    axes = FALSE
 )
 plot(
     model,
